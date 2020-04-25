@@ -1,0 +1,190 @@
+  body {
+    height: 100%;
+    width: calc(100% - 8px);
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  * {
+    font-family: 'Alice';
+    font-size: 1.25rem;
+  }
+  a, p, pre, b, ul, ol, li {
+    font-family: 'Alice';
+    font-size: 1em;
+  }
+
+  h1.book-title {
+    font-size: 4.8rem;
+    margin: 0px;
+    line-height: 4.0rem;
+  }
+  .book-version {
+    font-size: 1.5rem;
+    line-height: 10px;
+    font-style: italic;
+  }
+  .book-subtitle {
+    font-size: 2.7rem;
+    line-height: 2.6rem;
+    margin-top: 0.5rem;
+  }
+  .book-subtitle-continue {
+    font-size: 1.3em;
+    margin: 0;
+  }
+  .book-author {
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+  }
+  .divider {
+    margin: 3rem 0 3rem 0;
+    background: #17da00;
+    height: 2px;
+    border: 0;
+  }
+  
+  h2.toc {
+    font-size: 2.4em;
+    margin: 1.2em 0 0 0;
+    line-height: 2em;
+    border-top: 2px solid #17da00;
+  }
+  h3.toc {
+    font-size: 2.0em;
+    margin: 0.8em 0 0 0;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  ul.toc {
+    list-style-type: none;
+    font-size: 1rem;
+    padding-inline-start: 15px;
+  }
+  li.toc {
+    font-size: 1.35em;
+  }
+  
+  .main-container {
+    margin: 150px 50px 150px 33%;
+  }
+
+  .chapter-container {
+    width: 750px;
+    margin: 5% 0 150px 33%;
+  }
+  .chapter-toc-container {
+    position: fixed;
+    width: calc(33% - 150px);
+    margin: 0.8em 0 0 50px;
+    padding: 0 1em 0.5em 0;
+    border-right: 2px solid #17da00;
+    text-align: right;
+  }
+  h1.chapter {
+    font-size: 2.75em;
+    margin-bottom: 0; 
+  }
+  h2.chapter {
+    font-size: 1.8em;
+    margin-top: 70px;
+  }
+  h3.chapter {
+    font-size: 1.7em;
+    margin-bottom: 0;
+  }
+  h4.chapter {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  h1.chapter-toc {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  h2.chapter-toc {
+    font-size: 0.8em;
+    margin: 0;
+    text-decoration: underline;
+  }
+  h3.chapter-toc {
+    font-size: 0.8em;
+    margin: 0;
+    text-decoration: underline;
+  }
+  -h3.chapter-toc.current {
+    background-color: #17da00;
+    color: white;
+    padding: 5px 0px 5px 10px;
+    border-radius: 5px;
+  }
+
+  .mobile-toc {
+    display: none;
+  }
+  
+  .definition {
+    background-color: #f2f2f2;
+    padding: 15px;
+  }
+  .first_paragraph {
+    margin-top: 5px;
+  }
+
+  @media only screen
+    and (min-width: 320px) 
+    and (max-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) { 
+      * {  // workaround to disable font autoscale in Chrome mobile emulator
+            max-height: 100000px; 
+      }
+      h1 {
+        font-size: 5.6rem;
+        margin: 0px;
+        font-weight: normal;
+      }
+      h1.chapter {
+        font-size: 4.2rem;
+        margin-top: 100px;
+        font-weight: 700;
+        font-family: 'PT Serif';
+      }
+      h2 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        font-family: 'PT Serif';
+      }
+      h3 {
+        font-size: 2.2rem;
+        font-weight: normal;
+      }
+      h4 {
+        font-size: 1.8rem;
+        font-weight: normal;
+      }
+      h5 {
+        font-size: 1.6rem;
+        font-weight: normal;
+      }
+      a, p, pre, b, ul, ol, li {
+        font-family: 'Alice';
+        font-size: 1em;
+        line-height: 1.4;
+      }
+
+      .main-container {
+        margin: 50px 50px 20% 50px;
+      }
+      .chapter-container {
+        margin: 50px 50px 10% 60px;
+        font-size: 42px;
+        width: auto;
+      }
+      .chapter-toc-container {
+        display: none;
+      }
+      .mobile-toc {
+        display: block;
+      }
+  }
