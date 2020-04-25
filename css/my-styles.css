@@ -4,3 +4,6 @@ h1.book-title {
 hr.divider {
 	background: black;
 }
+h2.toc {
+    border-top: 2px solid black;
+}
