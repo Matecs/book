@@ -11,9 +11,4 @@ p.definition {
     font-family: monospace;
     font-size: 0.7em;
 }
-ul.chapter-toc {
-    list-style-type: none;
-    font-size: 0.8em;
-    margin: 0;
-    text-decoration: underline;
-}
+
