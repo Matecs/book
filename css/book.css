@@ -5,6 +5,9 @@
     line-height: 1.3;
   }
   * {
+    //font-family: 'Vollkorn';
+    //font-family: 'IBM Plex Serif';
+    //font-family: 'Literata';
     font-family: 'Alice';
     font-size: 1.25rem;
   }
@@ -47,7 +50,8 @@
   h2.toc {
     font-size: 2.4em;
     margin: 1.2em 0 0 0;
-    line-height: 2em;
+    line-height: 1em;
+    padding-top: 1em;
     border-top: 2px solid #17da00;
   }
   h3.toc {
@@ -85,18 +89,19 @@
   }
   h1.chapter {
     font-size: 2.75em;
-    margin-bottom: 0; 
+    -margin-bottom: 0;
+    line-height: 1em;
   }
   h2.chapter {
     font-size: 1.8em;
     margin-top: 70px;
   }
   h3.chapter {
-    font-size: 1.7em;
+    font-size: 1.55em;
     margin-bottom: 0;
   }
   h4.chapter {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0;
   }
   h1.chapter-toc {
@@ -151,27 +156,33 @@
         font-weight: normal;
       }
       h1.chapter {
-        font-size: 4.2rem;
-        margin-top: 100px;
-        font-weight: 700;
-        font-family: 'PT Serif';
+        font-size: 2.5em;
+        margin-top: 1em;
+        margin-bottom: 0.7em;
+        font-weight: 500;
+        font-family: 'Alice';
+        //font-family: 'PT Serif';
       }
       h2 {
         font-size: 3.2rem;
         font-weight: 500;
-        font-family: 'PT Serif';
+        font-family: 'Alice';
+        //font-family: 'PT Serif';
       }
       h3 {
         font-size: 2.2rem;
         font-weight: normal;
+        font-family: 'Alice';
       }
       h4 {
         font-size: 1.8rem;
         font-weight: normal;
+        font-family: 'Alice';
       }
       h5 {
         font-size: 1.6rem;
         font-weight: normal;
+        font-family: 'Alice';
       }
       a, p, pre, b, ul, ol, li {
         font-family: 'Alice';
@@ -183,7 +194,7 @@
         margin: 50px 50px 20% 50px;
       }
       .chapter-container {
-        margin: 50px 50px 10% 60px;
+        margin: 50px 50px 10% 50px;
         font-size: 42px;
         width: auto;
       }
